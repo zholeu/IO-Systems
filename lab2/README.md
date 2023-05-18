@@ -32,6 +32,14 @@ Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disklabel type: dos
 Disk identifier: 0x36e5756d
+
+
+Device     	Boot Start	End Sectors Size Id Type
+/dev/vramdisk1      	1  20479   20479  10M 83 Linux
+/dev/vramdisk2  	20480  61439   40960  20M 83 Linux
+/dev/vramdisk3  	61440 102399   40960  20M  5 Extended
+/dev/vramdisk5  	61441  81919   20479  10M 83 Linux
+/dev/vramdisk6  	81921 102399   20479  10M 83 Linux
 ```
 Информация о диске:
 ```bash
