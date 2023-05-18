@@ -60,7 +60,6 @@ mkfs.fat 4.2 (2021-01-31)
 Получаем информацию о диске:
 ```bash
 lsblk
-```
 NAME    	MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
 sda       	8:0	0   20G  0 disk
 ├─sda1    	8:1	0	1M  0 part
@@ -73,3 +72,5 @@ vramdisk	252:0	0   50M  0 disk
 ├─vramdisk3 252:3	0	1K  0 part
 ├─vramdisk5 252:5	0   10M  0 part
 └─vramdisk6 252:6	0   10M  0 part
+```
+
