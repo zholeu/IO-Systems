@@ -35,17 +35,26 @@ Disklabel type: dos
 Disk identifier: 0x36e5756d
 
 Пример создания файловых систем, на созданном диске:
-
+```bash
 al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk1
+```
 mkfs.fat 4.2 (2021-01-31)
+```bash
 al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk2
+```
 mkfs.fat 4.2 (2021-01-31)
+```bash
 al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk3
+```
 mkfs.fat 4.2 (2021-01-31)
 mkfs.vfat: Attempting to create a too small or a too large filesystem
+```bash
 al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk5
+```
 mkfs.fat 4.2 (2021-01-31)
+```bash
 al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk6
+```
 mkfs.fat 4.2 (2021-01-31)
 
 Получаем информацию о диске:
