@@ -26,38 +26,14 @@ insmod io2.ko
 
 ```bash
 sudo fdisk /dev/vramdisk -l
-```
 Disk /dev/vramdisk: 50 MiB, 52428800 bytes, 102400 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disklabel type: dos
 Disk identifier: 0x36e5756d
-
-Пример создания файловых систем, на созданном диске:
-```bash
-al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk1
 ```
-mkfs.fat 4.2 (2021-01-31)
-```bash
-al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk2
-```
-mkfs.fat 4.2 (2021-01-31)
-```bash
-al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk3
-```
-mkfs.fat 4.2 (2021-01-31)
-mkfs.vfat: Attempting to create a too small or a too large filesystem
-```bash
-al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk5
-```
-mkfs.fat 4.2 (2021-01-31)
-```bash
-al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk6
-```
-mkfs.fat 4.2 (2021-01-31)
-
-Получаем информацию о диске:
+Информация о диске:
 ```bash
 lsblk
 NAME    	MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
@@ -72,5 +48,21 @@ vramdisk	252:0	0   50M  0 disk
 ├─vramdisk3 252:3	0	1K  0 part
 ├─vramdisk5 252:5	0   10M  0 part
 └─vramdisk6 252:6	0   10M  0 part
+```
+
+Пример создания файловых систем, на созданном диске:
+
+```bash
+al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk1
+mkfs.fat 4.2 (2021-01-31)
+al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk2
+mkfs.fat 4.2 (2021-01-31)
+al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk3
+mkfs.fat 4.2 (2021-01-31)
+mkfs.vfat: Attempting to create a too small or a too large filesystem
+al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk5
+mkfs.fat 4.2 (2021-01-31)
+al@al-VirtualBox:~/Desktop/o$ sudo mkfs.vfat /dev/vramdisk6
+mkfs.fat 4.2 (2021-01-31)
 ```
 
